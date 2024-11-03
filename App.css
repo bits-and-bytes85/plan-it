@@ -1,0 +1,172 @@
+/* App.css */
+
+/* General setup */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Helvetica', sans-serif;
+}
+.main-container {
+  display: flex;
+  gap: 20px; /* Spacing between columns */
+  margin-top: 20px;
+}
+.column {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.feed{
+  color: #e0e6f7; /* Light, moon-like text */
+  font-size: 1em;
+
+}
+body {
+  background-image: url('/Users/shriyagautam/Desktop/Projects/plan-it/background.jpg');
+  /* background-color: #0d0d2b; Deep space blue */
+  color: #e0e6f7; /* Light, moon-like text */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+}
+
+
+.App {
+  text-align: center;
+  align-self: center;
+  padding: 20px;
+  width: 1000px;
+  height: 500px;
+  background: rgba(255, 255, 255, 0.1);
+  border-radius: 15px;
+  box-shadow: 0 0 30px rgba(255, 255, 255, 0.2);
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  backdrop-filter: blur(10px);
+}
+
+/* Heading style */
+h1, h2 {
+  color: #adcef7; /* Light, soft blue */
+  text-shadow: 0 0 10px rgba(255, 255, 255, 0.5);
+  text-decoration: underline;
+  margin-bottom: 20px;
+}
+
+h3{
+  color: #adcef7; /* Light, soft blue */
+  margin-bottom: 20px;
+}
+
+/* Input and button styling */
+form {
+  display: flex;
+  justify-content: center;
+  margin: 20px 0;
+}
+
+input[type="text"] {
+  padding: 10px;
+  font-size: 1em;
+  border-radius: 5px;
+  border: 1px solid #555;
+  background-color: #1b1b3a;
+  color: #e0e6f7;
+}
+
+button {
+  margin-left: 10px;
+  padding: 10px 15px;
+  font-family: 'Verdana', sans-serif;
+  color: #e0e6f7;
+
+  font-size: 1em;
+  color: #0d0d2b;
+  background-color: rgb(69, 146, 187, 0.5);
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+
+button:hover {
+  background-color: #5a9edc; /* Hover effect */
+}
+
+/* Task List Styling */
+.task-list {
+  max-height: 300px; /* Set height limit */
+  overflow-y: auto;  /* Make it scrollable */
+  padding: 0;
+}
+ 
+ul {
+  list-style: none;
+  padding: 0;
+}
+
+li {
+  padding: 10px;
+  background: rgba(0, 51, 102, 0.5); /* Semi-transparent blue */
+  margin: 5px 0;
+  border-radius: 8px;
+  box-shadow: 0 0 8px rgba(0, 102, 204, 0.4); /* Glowing shadow */
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+li button {
+  padding: 5px 10px;
+  font-size: 0.9em;
+  color: #ffffff;
+  background-color: #2c2c54; /* Darker button for marking tasks */
+  border: none;
+  border-radius: 5px;
+}
+
+li button:hover {
+  background-color: #505090;
+}
+
+/* Timer Styling */
+.PomodoroTimer {
+  margin-top: 20px;
+  margin-bottom: 20px;
+
+}
+
+.PomodoroTimer div {
+  font-size: 4em;
+  color: #e8f1fd; /* Light, lunar white */
+  text-decoration:double;
+  margin: 10px 10px;
+  text-shadow: 0 0 8px rgba(255, 255, 255, 0.7);
+}
+
+.PomodoroTimer h1{
+  font-size: 4em;
+  color: #e8f1fd; /* Light, lunar white */
+  text-decoration:double;
+  margin: 10px 10px;
+  text-shadow: 0 0 8px rgba(255, 255, 255, 0.7);
+}
+
+.PomodoroTimer button {
+  margin: 0 30px;
+  padding: 8px 12px;
+  font-size: 4em;
+  color: #1e3a5f;
+  background-color: #adcef7; /* Soft blue to match space theme */
+  border:rgba(0, 51, 102, 0.5);
+  border-radius: 7px;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+
+.PomodoroTimer button:hover {
+  background-color: #7aa6d9;
+}
